@@ -71,9 +71,32 @@ export class CharacterClasses {
     newChar['res']++;
     console.log('lvl newChar', newChar)
   }
-  addItem(item) {
-  let newChar = this.chosenClass;
-  newChar['inv'].push(item);
-  console.log(newChar);
+  invMethod() {
+    // let inventory = new Map (
+    //   inventory.set([
+    //     [1, {'name': 'potion', 'effects': ['hp']+= 20}],
+    //     [2, {'name': 'staff', 'effects': ['mp']+=20}],
+    //     [3, {'name': 'hammer', 'effects': ['str']+=2}],
+    //     [4, {'name': 'boots', 'effects': ['spd']+=2}],
+    //     [5, {'name': 'shield', 'effects': ['def']+=2}],
+    //     [6, {'name': 'book', 'effects': ['int']+=2}],
+    //     [7, {'name': 'cloak', 'effects': ['stl']+=2}],
+    //     [8, {'name': 'crystal', 'effects': ['res']+=2}]
+    //   ])
+    // );
   }
+
+
+    // console.log('inventory', inventory)
+  // let inv = new Map() 
+  // // let keyObj = {name, effect}
+  // / llet addItem = function(item) {
+    
+  // /}
+  //   newChar['inv'].push(item);
+  //   console.log(newChar);
+    
+  // dropItem(item) {
+  // let newChar = this.chosenClass
+ 
 }
