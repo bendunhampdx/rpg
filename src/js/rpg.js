@@ -3,7 +3,7 @@ export class CharacterClasses {
     this.mage = { //184
       type: "mage",
       lvl: 1,
-      inv: [],
+      inv: [],  
       hp: 50,
       mp: 100,
       str: 4,
@@ -52,6 +52,9 @@ export class CharacterClasses {
       stl: 5,
       res: 9
     };
+    // this.inventoryObject = {
+      
+    // }
   }
   newChar(chosenClass) {
     this.chosenClass = chosenClass;
@@ -72,20 +75,30 @@ export class CharacterClasses {
     console.log('lvl newChar', newChar)
   }
   invMethod() {
-    // let inventory = new Map (
-    //   inventory.set([
-    //     [1, {'name': 'potion', 'effects': ['hp']+= 20}],
-    //     [2, {'name': 'staff', 'effects': ['mp']+=20}],
-    //     [3, {'name': 'hammer', 'effects': ['str']+=2}],
-    //     [4, {'name': 'boots', 'effects': ['spd']+=2}],
-    //     [5, {'name': 'shield', 'effects': ['def']+=2}],
-    //     [6, {'name': 'book', 'effects': ['int']+=2}],
-    //     [7, {'name': 'cloak', 'effects': ['stl']+=2}],
-    //     [8, {'name': 'crystal', 'effects': ['res']+=2}]
-    //   ])
-    // );
+    let inventory = new Map (
+      [
+        [1, {'name': 'potion', 'effects': 20}],
+        [2, {'name': 'staff', 'effects': 20}],
+        [3, {'name': 'hammer', 'effects': 2}],
+        [4, {'name': 'boots', 'effects': 2}],
+        [5, {'name': 'shield', 'effects': 2}],
+        [6, {'name': 'book', 'effects': 2}],
+        [7, {'name': 'cloak', 'effects': 2}],
+        [8, {'name': 'crystal', 'effects': 2}]
+      ]
+      );
+      this.inventoryObject = inventory;
+      return 'inventory made';
+    console.log("inventory", inventory);
+    console.log('this object', this);
   }
-
+  // let dungeon = new Map(
+  //   [
+  //     [1, "The room is dark and has no windows."],
+  //     [2, "There are spiderwebs everywhere."],
+  //     [3, "There is a book on a stone pedestal. The book appears to be glowing."]
+  //   ]
+  // );
 
     // console.log('inventory', inventory)
   // let inv = new Map() 
@@ -97,6 +110,6 @@ export class CharacterClasses {
   //   console.log(newChar);
     
   // dropItem(item) {
-  // let newChar = this.chosenClass
+  // let newChar = this.chosenClass 
  
 }

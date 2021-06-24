@@ -26,8 +26,16 @@ describe('CharacterClasses', () => {
       const characterClasses = new CharacterClasses();
       let newChar = characterClasses.newChar(characterClasses.mage);
       characterClasses.invMethod();
-      expect(newChar.invMethod).toEqual("staff");
+      console.log('characterClasses Object', characterClasses);
+      expect(characterClasses.invMethod()).toEqual('inventory made');
     })
+    // test('should create inventory map within invMethod', () =>{
+    //   const characterClasses = new CharacterClasses();
+    //   let newChar = characterClasses.newChar(characterClasses.mage);
+    //   characterClasses.invMethod();
+    //     let inventory = new Map ();
+    //     expect (newChar.invMethod).toEqual("staff");
+    // })
   // test('should create add inventory method', () => {
   //   const characterClasses = new CharacterClasses();
   //   let newChar = characterClasses.newChar(characterClasses.mage);
