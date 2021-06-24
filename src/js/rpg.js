@@ -92,6 +92,26 @@ export class CharacterClasses {
     console.log("inventory", inventory);
     console.log('this object', this);
   }
+  addInvItem(invItem) {
+    let newChar = this.chosenClass; 
+    for (let [key, value] of this.inventoryObject) {
+      if (invItem === value.name) {
+        newChar.inv.push(invItem);
+      }
+    }
+    console.log('newItem?', newChar.inv);
+
+
+  }
+  // practiceLoop(invItem) {
+  //   let newChar = this.chosenClass;
+  //   console.log('this invObject', this.inventoryObject);
+  //   for (let [key, value] of this.inventoryObject) {
+  //     console.log('key', key);
+  //     console.log('value', value);
+  //   }
+  // }
+
   // let dungeon = new Map(
   //   [
   //     [1, "The room is dark and has no windows."],

@@ -21,6 +21,7 @@ describe('CharacterClasses', () => {
     let newChar = characterClasses.newChar(characterClasses.mage);
     characterClasses.lvlUp();
     expect(newChar.lvl).toEqual(2);
+
   });
     test('should create inventory method', () => {
       const characterClasses = new CharacterClasses();
@@ -32,9 +33,16 @@ describe('CharacterClasses', () => {
     test('should create add inventory method', () => {
       const characterClasses = new CharacterClasses();
       let newChar = characterClasses.newChar(characterClasses.mage);
-      characterClasses.addInvItem("staff");
-      expect(characterClasses.addInvItem(2["name"])).toEqual("staff");
+      characterClasses.invMethod();
+      characterClasses.addInvItem('boots')
+      expect(newChar.inv).toEqual(["boots"]);
     })
+    // test('should create add inventory method', () => {
+    //   const characterClasses = new CharacterClasses();
+    //   let newChar = characterClasses.newChar(characterClasses.mage);
+    //   characterClasses.addInvItem("staff");
+    //   expect(characterClasses.addInvItem(2["name"])).toEqual("staff");
+    // })
 //   test('should create drop inventory method', () => {
 //     const characterClasses = new CharacterClasses();
 //     let newChar = characterClasses.newChar(characterClasses.mage);
